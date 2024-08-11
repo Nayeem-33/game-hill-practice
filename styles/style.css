@@ -1,0 +1,209 @@
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+/* FONT STYLES */
+html {
+    font-size: 10px;
+}
+body {
+    font-family: "Work Sans", system-ui;
+    background-color: var(--secondary-color);
+}
+h1 {
+    font-size: 10rem;
+    font-weight: 900;
+    line-height: 8rem;
+}
+h2 {
+    font-size: 4.8rem;
+    font-weight: 600;
+}
+h3 {
+    font-size: 3.2rem;
+    font-weight: 900;
+}
+h4 {
+    font-size: 2.8rem;
+    font-weight: 900;
+}
+h5 {
+    font-size: 2rem;
+    font-weight: 900;
+}
+p {
+    font-size: 1.8rem;
+    font-weight: 400;
+    line-height: 2rem;
+}
+.logo {
+    font-size: 3.6rem;
+    font-weight: 900;
+}
+
+
+
+
+/* COLOR AND SIZING ROOTS */
+:root {
+    --primary-color: rgb(95, 67, 178);
+    --primary-color-light: rgb(135, 88, 241);
+    --secondary-color: rgb(254, 253, 253);
+    --secondary-color-dark: rgb(177, 174, 187);
+    --black-color: rgb(1, 1, 1);
+
+    --text-primary-color: rgba(255, 255, 255, 1);
+    --text-secondary-color: rgba(255, 255, 255, 0.5);
+    
+    --container-width: 70%;
+}
+
+.test{
+    background-color: black;
+}
+
+
+/* UNIVERSAL STYLE */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+img {
+    width: 100%;
+    height: auto;
+}
+.container {
+    width: 1200px;
+    margin: 0 auto;
+    margin-top: 10rem;
+}
+li {
+    list-style: none;
+    font-size: 2rem;
+}
+.gradient-text {
+    background-image: linear-gradient(to top, var(--primary-color), var(--primary-color-light));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+button {
+    cursor: pointer;
+    font-weight: 700;
+    font-size: 2rem;
+    border-radius: 4.8rem;
+    transition: all .3s ease-in-out;
+}
+button:hover {
+    color: var(--secondary-color);
+    background-color: var(--secondary-color-dark);
+}
+.btn-primary {
+    padding: 2rem 4rem;
+    background-color: var(--primary-color-light);
+    color: white;
+    border: none;
+}
+.btn-secondary {
+    padding: 1.7rem 3.7rem;
+    background-color: transparent;
+    color: var(--primary-color-light);
+    border: .3rem solid var(--secondary-color-dark);
+}
+
+
+/* NAVBAR STYLES */
+.hamburger {
+    display: none;
+}
+.navbar {
+    display: flex;
+    margin-top: 3rem;
+    align-items: center;
+    justify-content: space-between;
+}
+.logo-div {
+    display: flex;
+}
+.logo-image {
+    width: 4.5rem;
+    margin-right: .5rem;
+}
+.logo-text-color {
+    color: var(--primary-color);
+}
+.nav-link {
+    display: flex;
+    align-items: center;
+    font-size: 1.8rem;
+    font-weight: 500;
+    gap: 3.2rem;
+}
+.nav-link>ul {
+    display: flex;
+    gap: 3.2rem;
+}
+.nav-link>ul>li {
+    cursor: pointer;
+    font-size: 1.8rem;
+    transition: all .5s ease-in-out;
+}
+.nav-link>ul>li:hover {
+color: var(--primary-color);
+text-decoration: underline;
+}
+.follow-btn {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    padding: 1.5rem 3rem;
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+    border-radius: .8rem;
+    cursor: pointer;
+    transition: all .3s ease-in-out;
+}
+.fa-brands {
+    font-size: 3rem;
+}
+.follow-btn:hover {
+    background-color: var(--secondary-color-dark);
+}
+
+/* HERO DIV STYLES */
+.hero-div {
+    margin-top: 3rem;
+    border: 2px solid red;
+    display: flex;
+    /* align-items: center; */
+}
+.hero-text-div {
+    padding-left: 3rem;
+    height: 60rem;
+    width: 50%;
+    border: 2px solid green;
+    background-image: url(../assets/hero\ bg.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 2.4rem;
+}
+.hero-text-div li {
+    gap: 1.6rem;
+}
+.hero-ul-div {
+    display: flex;
+    gap: 1.5rem;
+}
+.hero-ul-div {
+    line-height: 3rem;
+}
+.hero-image-div {
+    width: 50%;
+    border: 2px solid blue;
+    display: flex;
+    align-items: end;
+
+}
