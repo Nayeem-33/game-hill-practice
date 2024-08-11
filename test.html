@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Game Cards</title>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"/>
+<style>
+  .game-1 {
+    background-image: url('../assets/game-poster-1.png');
+}
+.game-2 {
+    background-image: url('../assets/game-poster-2.png');
+}
+
+
+
+
+
+
+  .game {
+    /* position: relative; */
+    width: 200px; /* Adjust as needed */
+    margin: 20px;
+    text-align: center;
+  }
+
+  .game-card {
+    position: relative;
+    width: 100%;
+    height: 300px; /* Adjust as needed */
+    background-color: #f0f0f0;
+    border-radius: 10px;
+    overflow: hidden;
+    transition: all 10s ease-in-out;
+  }
+
+  .game-hover {
+    align-items: center;
+    justify-content: center;
+    display: none;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: white;
+    font-size: 18px;
+  }
+  .play {
+    position: absolute;
+    top: 50%;
+  }
+
+  .game-card:hover .game-hover {
+    display: block;
+  }
+
+  .game-card:hover {
+    border: 5px solid #ff0000; /* White border on hover */
+    background-color: rgba(221, 7, 7, 0.5); /* Transparent black background on hover */
+    cursor: pointer;
+  }
+
+  .game-card:hover::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(179, 17, 17, 0.5);
+    z-index: 1;
+    transition: all 10s ease-in-out;
+  }
+
+  .game-hover {
+    z-index: 2; /* Ensure the text is above the overlay */
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+  .fa-circle-play {
+    font-size: 40px; /* Adjust the icon size */
+  }
+
+  p {
+    margin-top: 10px;
+    font-weight: bold;
+  }
+</style>
+</head>
+<body>
+
+<div class="game">
+  <div class="game-1 game-card">
+    <div class="game-hover">
+      <i class="fa-solid fa-circle-play"></i><br><br>
+      <span class="play-now">Play Now</span>
+    </div>
+  </div>
+  <p>DOTA 2</p>
+</div>
+
+<div class="game">
+  <div class="game-2 game-card">
+    <div class="game-hover">
+      <i class="fa-solid fa-circle-play"></i><br><br>
+      <span class="play-now">Play Now</span>
+    </div>
+  </div>
+  <p>ROBLOX</p>
+</div>
+
+<!-- Add the other game cards here in a similar fashion -->
+
+</body>
+</html>

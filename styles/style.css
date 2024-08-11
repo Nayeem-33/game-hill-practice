@@ -223,8 +223,80 @@ text-decoration: underline;
     text-align: right;
     padding-left: 3rem;
 }
-.online-game-div{
+
+/* ONLINE GAMES STYLES */
+.online-text-div {
+text-align: center;
+margin-bottom: 5rem;
+}
+.online-game-div {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     gap: 2rem;
+}
+.game-1 {
+    background-image: url('../assets/game-poster-1.png');
+}
+.game-2 {
+    background-image: url('../assets/game-poster-2.png');
+}
+.game-3 {
+    background-image: url('../assets/game-poster-3.png');
+}
+.game-4 {
+    background-image: url('../assets/game-poster-4.png');
+}
+.game-5 {
+    background-image: url('../assets/game-poster-5.png');
+}
+.game-6 {
+    background-image: url('../assets/game-poster-6.png');
+}
+.game-7 {
+    background-image: url('../assets/game-poster-7.png');
+}
+.game-8 {
+    background-image: url('../assets/game-poster-8.png');
+}
+
+.game-card {
+    height: 40rem;
+    border-radius: 1.6rem;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.game-hover {
+    position: relative;
+    text-align: center;
+    display: none;
+}
+.play {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.game-hover .fa-circle-play {
+    font-size: 5rem;
+    color: var(--secondary-color);
+}
+.play-now {
+    font-size: 2.3rem;
+    font-weight: 600;
+    color: var(--primary-color-light);
+}
+.game-card:hover .game-hover {
+    display: block;
+    height: 40rem;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+    border: 5px solid var(--primary-color-light);
+    border-radius: 1.6rem;
+}
+.game-title {
+    font-size: 2rem;
+    font-weight: 500;
+    text-align: center;
+    margin-top: 1rem;
 }
