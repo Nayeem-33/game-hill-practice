@@ -196,10 +196,20 @@ text-decoration: underline;
 .hero-ul-div {
     line-height: 3rem;
 }
+/* .hero-image-div {
+    width: 50%;
+    display: flex;
+    align-items: end;
+} */
 .hero-image-div {
     width: 50%;
     display: flex;
     align-items: end;
+    position: relative;
+}
+.hero-img {
+    position: absolute;
+    bottom: -15%;
 }
 
 
