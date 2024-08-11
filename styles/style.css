@@ -223,3 +223,8 @@ text-decoration: underline;
     text-align: right;
     padding-left: 3rem;
 }
+.online-game-div{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 2rem;
+}
