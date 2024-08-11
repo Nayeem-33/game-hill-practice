@@ -19,21 +19,21 @@ h2 {
     font-weight: 600;
 }
 h3 {
-    font-size: 3.2rem;
-    font-weight: 900;
+    font-size: 4.8rem;
+    font-weight: 700;
 }
-h4 {
+/* h4 {
     font-size: 2.8rem;
     font-weight: 900;
-}
-h5 {
+} */
+/* h5 {
     font-size: 2rem;
     font-weight: 900;
-}
+} */
 p {
     font-size: 1.8rem;
     font-weight: 400;
-    line-height: 2rem;
+    line-height: 3rem;
 }
 .logo {
     font-size: 3.6rem;
@@ -57,9 +57,7 @@ p {
     --container-width: 70%;
 }
 
-.test{
-    background-color: black;
-}
+
 
 
 /* UNIVERSAL STYLE */
@@ -84,6 +82,7 @@ li {
 .gradient-text {
     background-image: linear-gradient(to top, var(--primary-color), var(--primary-color-light));
     -webkit-background-clip: text;
+    background-clip: text;
     -webkit-text-fill-color: transparent;
 }
 button {
@@ -169,22 +168,19 @@ text-decoration: underline;
     background-color: var(--secondary-color-dark);
 }
 
+
 /* HERO DIV STYLES */
 .hero-div {
     margin-top: 3rem;
-    border: 2px solid red;
     display: flex;
-    /* align-items: center; */
 }
 .hero-text-div {
     padding-left: 3rem;
     height: 60rem;
     width: 50%;
-    border: 2px solid green;
     background-image: url(../assets/hero\ bg.png);
     background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
+    background-size: contain;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -202,8 +198,28 @@ text-decoration: underline;
 }
 .hero-image-div {
     width: 50%;
-    border: 2px solid blue;
     display: flex;
     align-items: end;
+}
 
+
+/* WE ARE GAMER STYLES */
+.gamer-bg-div {
+    background-color: rgba(207, 207, 207, 0.3);
+    height: 50rem;
+    display: flex;
+    align-items: center;
+}
+.gamer-div {
+    display: flex;
+    margin-top: 0;
+    align-items: center;
+}
+.gamer-image-div {
+    width: 55%;
+}
+.gamer-text-div {
+    width: 45%;
+    text-align: right;
+    padding-left: 3rem;
 }
