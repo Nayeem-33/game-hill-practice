@@ -22,14 +22,6 @@ h3 {
     font-size: 4.8rem;
     font-weight: 700;
 }
-/* h4 {
-    font-size: rem;
-    font-weight: 900;
-} */
-/* h5 {
-    font-size: 2rem;
-    font-weight: 900;
-} */
 p {
     font-size: 1.8rem;
     font-weight: 400;
@@ -51,8 +43,8 @@ p {
     --secondary-color-dark: rgb(177, 174, 187);
     --primary-color-opacity: rgba(135, 88, 241, 0.1);
 
-    --text-primary-color: rgba(255, 255, 255, 1);
-    --text-secondary-color: rgba(255, 255, 255, 0.5);
+    --text-primary-color: rgba(92, 92, 92, 0.7);
+    --text-secondary-color: rgba(36, 36, 36, 0.7);
     
     --container-width: 70%;
 }
@@ -424,10 +416,11 @@ margin-bottom: 5rem;
     font-size: 2rem;
     font-weight: 600;
     gap: 2rem;
-    border: 2px solid transparent;
+    border: .3rem solid transparent;
+    cursor: pointer;
 }
 .category-div-ind:hover {
-    border: 2px solid var(--primary-color);
+    border: .3rem solid var(--primary-color);
     color: var(--primary-color);
 }
 .cat-icon {
@@ -438,4 +431,43 @@ margin-bottom: 5rem;
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+
+/* FOOTER STYLES */
+footer {
+    background-color: var(--secondary-color-dark);
+}
+.footer-div {
+    padding: 10rem 0;
+    margin-top: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5rem;
+}
+.footer-links {
+    display: flex;
+    gap: 5rem;
+}
+
+footer .fa-brands {
+    font-size: 5rem;
+    padding: 2rem;
+    color: var(--primary-color);
+    cursor: pointer;
+}
+footer .fa-brands:hover {
+    color: var(--primary-color-light);
+}
+footer li {
+
+    color: var(--text-secondary-color);
+    cursor: pointer;
+}
+footer li:hover {
+    color: var(--primary-color-light);
+}
+.link-2 li{
+    color: var(--text-primary-color);
 }
