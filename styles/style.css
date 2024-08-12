@@ -443,7 +443,7 @@ margin-bottom: 5rem;
 
 /* FOOTER STYLES */
 footer {
-    background-color: var(--secondary-color-dark);
+    background-color: rgba(207, 207, 207, 0.3);
 }
 .footer-div {
     padding: 10rem 0;
