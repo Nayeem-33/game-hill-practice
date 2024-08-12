@@ -1,0 +1,124 @@
+@media screen and (max-width:576px) {
+    
+    html {
+        font-size: 8px;
+    }
+    body {
+        font-family: "Work Sans", system-ui;
+        background-color: var(--secondary-color);
+    }
+    h1 {
+        font-size: 10rem;
+        font-weight: 900;
+        line-height: 8rem;
+    }
+    h2 {
+        font-size: 4.8rem;
+        font-weight: 600;
+    }
+    h3 {
+        font-size: 4.8rem;
+        font-weight: 700;
+    }
+    p {
+        font-size: 1.8rem;
+        font-weight: 400;
+        line-height: 3rem;
+    }
+    .logo {
+        font-size: 3.6rem;
+        font-weight: 900;
+    }
+    
+    .container {
+        width: 95%;
+        margin-top: 5rem;
+    }
+
+    /* NAV STYLES */
+
+    .hamburger {
+        display: block;
+    }
+    .nav-link {
+        display: none;
+    }
+
+
+    .online-game-div {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .hide-game {
+        display: none;
+    }
+
+    .play-image-div-1 {
+        width: 48rem;
+        height:48rem;
+        margin-top: 3rem;
+    }
+    .play-img-1,
+    .play-img-3 {
+        width: 35rem;
+    }
+    .play-img-2,
+    .play-img-4 {
+        width: 20rem;
+        border: .6rem solid var(--secondary-color);
+    }
+
+    
+    .career-text-div {
+        padding: 0 2rem;
+    }
+
+
+    footer .fa-brands {
+        font-size: 2.5rem;
+    }
+    .footer-div{
+        width: 60%;
+    }
+
+
+    .category-div,
+    .footer-div,
+    .hero-div,
+    .navbar {
+        margin-top: 0;
+    }
+
+
+    .gamer-image-div,
+    .hero-image-div,
+    .career-image-div,
+    .bottom-div {
+        margin-top: 5rem;
+    }
+
+
+    .career-text-div,
+    .career-image-div,
+    .play-text-div-1,
+    .play-text-div-2,
+    .gamer-image-div,
+    .gamer-text-div,
+    .hero-text-div,
+    .hero-image-div {
+        width: 100%;
+    }
+
+
+    .career-div,
+    .hero-div,
+    .play-inst-top-div-1 {
+        flex-direction: column;
+    }
+
+
+    .gamer-div,
+    .play-inst-top-div-2 {
+        flex-direction: column-reverse;
+    }
+
+}

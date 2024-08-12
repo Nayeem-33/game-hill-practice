@@ -172,7 +172,8 @@ text-decoration: underline;
     width: 50%;
     background-image: url(../assets/hero\ bg.png);
     background-position: center;
-    background-size: contain;
+    background-repeat: no-repeat;
+    background-size: cover;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -208,7 +209,6 @@ text-decoration: underline;
 /* WE ARE GAMER STYLES */
 .gamer-bg-div {
     background-color: rgba(207, 207, 207, 0.3);
-    height: 50rem;
     display: flex;
     align-items: center;
 }
@@ -216,6 +216,7 @@ text-decoration: underline;
     display: flex;
     margin-top: 0;
     align-items: center;
+    padding: 6rem 0;
 }
 .gamer-image-div {
     width: 55%;
@@ -260,7 +261,12 @@ margin-bottom: 5rem;
 .game-8 {
     background-image: url('../assets/game-poster-8.png');
 }
-
+.game-9 {
+    background-image: url('../assets/mine\ 2.png');
+}
+.hide-game {
+    display: none;
+}
 .game-card {
     height: 40rem;
     border-radius: 1.6rem;
@@ -305,7 +311,8 @@ margin-bottom: 5rem;
 }
 
 /* PLAY INSTANTLY STYLES */
-.play-inst-top-div {
+.play-inst-top-div-1,
+.play-inst-top-div-2 {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -322,7 +329,7 @@ margin-bottom: 5rem;
 }
 .play-image-div-1 {
     height: 73rem;
-    width: 55%;
+    width: 68rem;
     position: relative;
 }
 
@@ -448,10 +455,11 @@ footer {
 }
 .footer-links {
     display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
     gap: 5rem;
 }
-
-footer .fa-brands {
+footer .fa-brands, .hamburger {
     font-size: 5rem;
     padding: 2rem;
     color: var(--primary-color);
@@ -461,7 +469,6 @@ footer .fa-brands:hover {
     color: var(--primary-color-light);
 }
 footer li {
-
     color: var(--text-secondary-color);
     cursor: pointer;
 }
@@ -470,4 +477,7 @@ footer li:hover {
 }
 .link-2 li{
     color: var(--text-primary-color);
+}
+.footer-div {
+    text-align: center;
 }
